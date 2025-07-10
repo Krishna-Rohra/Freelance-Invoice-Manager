@@ -16,7 +16,7 @@ public class ClientDAO {
             stmt.setString(2, client.getEmail());
             stmt.executeUpdate();
 
-            System.out.println("✅ Client added.");
+            System.out.println(" Client added.");
 
         } catch (SQLException e) {
             System.err.println("Error adding client: " + e.getMessage());
