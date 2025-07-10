@@ -10,18 +10,18 @@ public class MainApp {
         ClientDAO clientDAO = new ClientDAO();
         ServiceDAO serviceDAO = new ServiceDAO();
 
-        System.out.println("💼 Welcome to Freelance Invoice Manager");
+        System.out.println(" Welcome to Freelance Invoice Manager");
 
         while (true) {
             System.out.println("\nChoose an option:");
-            System.out.println("1️⃣  Add a client");
-            System.out.println("2️⃣  Show all clients");
-            System.out.println("3️⃣  Add a service");
-            System.out.println("4️⃣  Show all services");
-            System.out.println("5️⃣  Exit");
-            System.out.print("👉 Option: ");
+            System.out.println("1️.  Add a client");
+            System.out.println("2️.  Show all clients");
+            System.out.println("3️.  Add a service");
+            System.out.println("4️.  Show all services");
+            System.out.println("5️.  Exit");
+            System.out.print(" Option: ");
             int choice = sc.nextInt();
-            sc.nextLine(); // clear buffer
+            sc.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -61,12 +61,12 @@ public class MainApp {
                     break;
 
                 case 5:
-                    System.out.println("👋 Bye!");
+                    System.out.println("Bye!");
                     sc.close();
                     return;
 
                 default:
-                    System.out.println("❌ Invalid option.");
+                    System.out.println("Invalid option.");
             }
         }
     }
