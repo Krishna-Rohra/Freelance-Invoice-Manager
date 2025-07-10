@@ -21,7 +21,7 @@ public class ServiceDAO {
             stmt.setDouble(6, s.getTotal());
 
             stmt.executeUpdate();
-            System.out.println("✅ Service added.");
+            System.out.println(" Service added.");
 
         } catch (SQLException e) {
             System.err.println("Error adding service: " + e.getMessage());
